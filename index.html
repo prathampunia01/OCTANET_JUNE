@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">ASICS</h1>
+            <nav class="main-nav">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Sportstyle</a>
+                <a href="#">Collection</a>
+                <a href="#" class="sale-section">SALE</a>
+                <a href="#">Running Club</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search" />
+                    <span class="search-icon">&#128269;</span>
+                </div>
+                <div class="icon-group">
+                    <span class="nav-icon" id="liked">&#9825;</span>
+                    <span class="nav-icon" id="cart">&#128717;</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Online Exclusive: GEL-KAYANO™ 32</h2>
+            <p>Experience ultimate comfort and performance</p>
+            <button onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+
+            <div class="product-card" data-name="gel-kayano 32 luxe">
+                <img src="images/gel-kayano-32(luxe).jpeg" alt="GEL-KAYANO 32 luxe" />
+                <div class="card-body">
+                    <h3>GEL-KAYANO 32 LUXE</h3>
+                    <p>Running Shoes</p>
+                    <p class="price">₹17,499</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="gel-kayano 31">
+                <img src="images/gel-kayano-31.jpeg" alt="GEL-KAYANO 31" />
+                <div class="card-body">
+                    <h3>GEL-KAYANO 31</h3>
+                    <p>Running Shoes</p>
+                    <p class="price" style="text-decoration: line-through; display:inline">₹15,999</p>
+                    <p class="price" style="display:inline; color: red;">&nbsp;₹12,799</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="gel-kayano 31 luxe">
+                <img src="images/gel-kayano-luxe.jpeg" alt="GEL-KAYANO 31 LUXE" />
+                <div class="card-body">
+                    <h3>GEL-KAYANO 31 LUXE</h3>
+                    <p>Running Shoes</p>
+                    <p class="price">₹16,999</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="gt-2000 11">
+                <img src="images/gt-2000-11.jpeg" alt="GT-2000 11" />
+                <div class="card-body">
+                    <h3>GT-2000 11</h3>
+                    <p>Running Shoes</p>
+                    <p class="price">₹6,499</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="magic speed 3">
+                <img src="images/magic-speed-3.webp" alt="MAGIC SPEED 3" />
+                <div class="card-body">
+                    <h3>MAGIC SPEED 3</h3>
+                    <p>Running Shoes</p>
+                    <p class="price" style="text-decoration: line-through; display:inline">₹13,999</p>
+                    <p class="price" style="display:inline; color: red;">&nbsp;₹9,799</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="gel-nimbus 26">
+                <img src="images/gel-nimbus-26.jpeg" alt="GEL-NIMBUS 26" />
+                <div class="card-body">
+                    <h3>GEL-NIMBUS 26</h3>
+                    <p>Running Shoes</p>
+                    <p class="price" style="text-decoration: line-through; display:inline">₹15,999</p>
+                    <p class="price" style="display:inline; color: red;">&nbsp;₹11,199</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="skyhand og">
+                <img src="images/Skyhand-og.webp" alt="SKYHAND OG" />
+                <div class="card-body">
+                    <h3>SKYHAND OG</h3>
+                    <p>Sportstyle Shoes</p>
+                    <p class="price">₹10,999</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="japan-s">
+                <img src="images/Japan-S.jpeg" alt="JAPAN-S" />
+                <div class="card-body">
+                    <h3>JAPAN-S</h3>
+                    <p>Sportstyle Shoes</p>
+                    <p class="price">₹6,999</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="versablast-4">
+                <img src="images/VERSABLAST-4.jpeg" alt="VERSABLAST-4" />
+                <div class="card-body">
+                    <h3>VERSABLAST-4</h3>
+                    <p>Running Shoes</p>
+                    <p class="price">₹6,999</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="gel-quantum kei">
+                <img src="images/GEL-QUANTUM KEI.jpeg" alt="GEL-QUANTUM KEI" />
+                <div class="card-body">
+                    <h3>GEL-QUANTUM KEI</h3>
+                    <p>Running Shoes</p>
+                    <p class="price">₹8,999</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About ASICS</h2>
+        <p>
+            ASICS has been developing sports footwear and apparel for more than 50 years.
+            Our design philosophy revolves around comfort, performance, and innovation.
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 ASICS India Pvt. Ltd. All Rights Reserved.</p>
+            <p>Free Shipping | Easy Returns | Secure Payment | Cash on Delivery</p>
+        </div>
+        <section class="newsletter">
+            <h2>Sign up to Our Newsletter</h2>
+            <p>Be the first to hear about new products, exclusive events and online offers.</p>
+            <p>Sign up and Get 10% off on your first Order. T&amp;C applied.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required />
+                <button type="submit">Join us</button>
+            </form>
+        </section>
+        <section class="contact-connect">
+            <div class="contact-info">
+                <h3>Questions or concerns? Get in touch with us at: </h3>
+                <p>📞 0124-628XXXX &nbsp;&nbsp; ✉️ customer-service-india@asics.com</p>
+            </div>
+            <div class="social-links">
+                <h3>We’d love to hear from you! Connect with us at:</h3>
+                <div class="icons">
+                    <a href="https://www.facebook.com/asicsindia"><img src="images/facebook.png" alt="Facebook" /></a>
+                    <a href="https://x.com/asics_india"><img src="images/twitter.png" alt="Twitter" /></a>
+                    <a href="https://www.instagram.com/asicsindia/"><img src="images/instagram.png"
+                            alt="Instagram" /></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <div id="cart-popup" class="cart-popup">
+        Product added to cart!
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
